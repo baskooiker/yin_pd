@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="89">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <itemPath>yin-help.pd</itemPath>
+      <itemPath>yin-meta.pd</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>yin.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="utils" displayName="utils" projectFiles="true">
+      <logicalFolder name="dist" displayName="dist" projectFiles="true">
+        <logicalFolder name="Debug" displayName="Debug" projectFiles="true">
+          <logicalFolder name="MinGW-Windows"
+                         displayName="MinGW-Windows"
+                         projectFiles="true">
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>../utils/Makefile</itemPath>
+      <itemPath>../utils/Swarm.cpp</itemPath>
+      <itemPath>../utils/Swarm.h</itemPath>
+      <itemPath>../utils/m_pd.h</itemPath>
+      <itemPath>../utils/utils.cpp</itemPath>
+      <itemPath>../utils/utils.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="yin" displayName="yin" projectFiles="true">
+      <itemPath>../yin/Makefile</itemPath>
+      <itemPath>../yin/YIN.cpp</itemPath>
+      <itemPath>../yin/YIN.h</itemPath>
+      <itemPath>../yin/main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../utils</Elem>
+    <Elem>../yin</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>MinGW_TDM|MinGW_TDM</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="../utils/Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../utils/Swarm.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../utils/Swarm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../utils/m_pd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../utils/utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../utils/utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../yin/Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../yin/YIN.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../yin/YIN.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../yin/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="yin-help.pd" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="yin-meta.pd" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="yin.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="2">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>MinGW_TDM|MinGW_TDM</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="../utils/Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../utils/Swarm.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../utils/Swarm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../utils/m_pd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../utils/utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../utils/utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../yin/Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../yin/YIN.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../yin/YIN.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../yin/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="yin-help.pd" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="yin-meta.pd" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="yin.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
