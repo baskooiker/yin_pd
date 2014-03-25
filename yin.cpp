@@ -4,7 +4,7 @@
 #include "../YIN/YIN.h"
 #include <string>
 #include "../utils/HistogramBuffer.h"
-#include "../utils/utils.h"
+#include "../utils/utils.cpp"
 
 static t_class *yin_class;
 
@@ -47,11 +47,12 @@ void yin_list(t_yin *x, t_symbol *s,
 
     int maxdel = x->yin->getMaxDelay();
     t_atom atom_array[maxdel];
+//    float* y = x->yin->getYIN();
     fromFloatArray(maxdel, x->yin->getYIN(), atom_array);
     outlet_list(x->arr_out, &s_list, maxdel, atom_array);
 
-    fromFloatArray(maxdel, x->yin->getAvgs(), atom_array);
-    outlet_list(x->avgOut, &s_list, maxdel, atom_array);
+//    fromFloatArray(maxdel, x->yin->getAvgs(), atom_array);
+//    outlet_list(x->avgOut, &s_list, maxdel, atom_array);
     
     if (x->yin->isSync()) {
         x->hb->put(x->yin->getDip());
@@ -112,7 +113,7 @@ void *yin_new(t_symbol *s, int argc, t_atom *argv) {
     
     x->pitch_out = outlet_new(&x->x_obj, &s_float);
     x->arr_out = outlet_new(&x->x_obj, &s_list);
-    x->avgOut = outlet_new(&x->x_obj, &s_list);
+//    x->avgOut = outlet_new(&x->x_obj, &s_list);
     return (void *) x;
 }
 
