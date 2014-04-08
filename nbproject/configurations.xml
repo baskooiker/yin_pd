@@ -25,18 +25,29 @@
           </logicalFolder>
         </logicalFolder>
       </logicalFolder>
+      <itemPath>../utils/AlphaFilter.cpp</itemPath>
+      <itemPath>../utils/AlphaFilter.h</itemPath>
+      <itemPath>../utils/HistogramBuffer.cpp</itemPath>
+      <itemPath>../utils/HistogramBuffer.h</itemPath>
       <itemPath>../utils/Makefile</itemPath>
-      <itemPath>../utils/Swarm.cpp</itemPath>
-      <itemPath>../utils/Swarm.h</itemPath>
       <itemPath>../utils/m_pd.h</itemPath>
       <itemPath>../utils/utils.cpp</itemPath>
       <itemPath>../utils/utils.h</itemPath>
     </logicalFolder>
-    <logicalFolder name="yin" displayName="yin" projectFiles="true">
-      <itemPath>../yin/Makefile</itemPath>
-      <itemPath>../yin/YIN.cpp</itemPath>
-      <itemPath>../yin/YIN.h</itemPath>
-      <itemPath>../yin/main.cpp</itemPath>
+    <logicalFolder name="YIN" displayName="YIN" projectFiles="true">
+      <logicalFolder name="dist" displayName="dist" projectFiles="true">
+        <logicalFolder name="Debug" displayName="Debug" projectFiles="true">
+          <logicalFolder name="MinGW-Windows"
+                         displayName="MinGW-Windows"
+                         projectFiles="true">
+            <itemPath>../YIN/dist/Debug/MinGW-Windows/yin.exe</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>../YIN/Makefile</itemPath>
+      <itemPath>../YIN/YIN.cpp</itemPath>
+      <itemPath>../YIN/YIN.h</itemPath>
+      <itemPath>../YIN/main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -52,7 +63,7 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>../utils</Elem>
-    <Elem>../yin</Elem>
+    <Elem>../YIN</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -65,25 +76,34 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="../YIN/Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../YIN/YIN.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../YIN/YIN.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../YIN/dist/Debug/MinGW-Windows/yin.exe"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../YIN/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../utils/AlphaFilter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../utils/AlphaFilter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../utils/HistogramBuffer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../utils/HistogramBuffer.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="../utils/Makefile" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="../utils/Swarm.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="../utils/Swarm.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="../utils/m_pd.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="../utils/utils.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="../utils/utils.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="../yin/Makefile" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="../yin/YIN.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="../yin/YIN.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="../yin/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="yin-help.pd" ex="false" tool="3" flavor2="0">
       </item>
@@ -113,25 +133,34 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="../YIN/Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../YIN/YIN.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../YIN/YIN.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../YIN/dist/Debug/MinGW-Windows/yin.exe"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../YIN/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../utils/AlphaFilter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../utils/AlphaFilter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../utils/HistogramBuffer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../utils/HistogramBuffer.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="../utils/Makefile" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="../utils/Swarm.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="../utils/Swarm.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="../utils/m_pd.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="../utils/utils.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="../utils/utils.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="../yin/Makefile" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="../yin/YIN.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="../yin/YIN.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="../yin/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="yin-help.pd" ex="false" tool="3" flavor2="0">
       </item>

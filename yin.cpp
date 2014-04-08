@@ -4,7 +4,7 @@
 #include "../YIN/YIN.h"
 #include <string>
 #include "../utils/HistogramBuffer.h"
-#include "../utils/utils.cpp"
+#include "../utils/utils.h"
 
 static t_class *yin_class;
 
@@ -26,6 +26,13 @@ void fromFloatArray(int argc, float* array, t_atom* argv) {
     int i;
     for (i = 0; i < argc; i++) {
         SETFLOAT(argv + i, *(array + i));
+    }
+}
+
+void fromFloatArray(int argc, vector<float> v, t_atom* argv) {
+    int i;
+    for (i = 0; i < argc; i++) {
+        SETFLOAT(argv + i, v[i]);
     }
 }
 

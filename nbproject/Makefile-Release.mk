@@ -35,10 +35,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/_ext/2102424670/Swarm.o \
+	${OBJECTDIR}/_ext/1360910959/YIN.o \
+	${OBJECTDIR}/_ext/1360910959/main.o \
+	${OBJECTDIR}/_ext/2102424670/AlphaFilter.o \
+	${OBJECTDIR}/_ext/2102424670/HistogramBuffer.o \
 	${OBJECTDIR}/_ext/2102424670/utils.o \
-	${OBJECTDIR}/_ext/1360942735/YIN.o \
-	${OBJECTDIR}/_ext/1360942735/main.o \
 	${OBJECTDIR}/yin.o
 
 
@@ -66,25 +67,30 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libyin_pd.${CND_DLIB_EXT}: ${OBJECTFI
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libyin_pd.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -shared
 
-${OBJECTDIR}/_ext/2102424670/Swarm.o: ../utils/Swarm.cpp 
+${OBJECTDIR}/_ext/1360910959/YIN.o: ../YIN/YIN.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/1360910959
+	${RM} $@.d
+	$(COMPILE.cc) -O2  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360910959/YIN.o ../YIN/YIN.cpp
+
+${OBJECTDIR}/_ext/1360910959/main.o: ../YIN/main.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/1360910959
+	${RM} $@.d
+	$(COMPILE.cc) -O2  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360910959/main.o ../YIN/main.cpp
+
+${OBJECTDIR}/_ext/2102424670/AlphaFilter.o: ../utils/AlphaFilter.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/2102424670
 	${RM} $@.d
-	$(COMPILE.cc) -O2  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/2102424670/Swarm.o ../utils/Swarm.cpp
+	$(COMPILE.cc) -O2  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/2102424670/AlphaFilter.o ../utils/AlphaFilter.cpp
+
+${OBJECTDIR}/_ext/2102424670/HistogramBuffer.o: ../utils/HistogramBuffer.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/2102424670
+	${RM} $@.d
+	$(COMPILE.cc) -O2  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/2102424670/HistogramBuffer.o ../utils/HistogramBuffer.cpp
 
 ${OBJECTDIR}/_ext/2102424670/utils.o: ../utils/utils.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/2102424670
 	${RM} $@.d
 	$(COMPILE.cc) -O2  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/2102424670/utils.o ../utils/utils.cpp
-
-${OBJECTDIR}/_ext/1360942735/YIN.o: ../yin/YIN.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/1360942735
-	${RM} $@.d
-	$(COMPILE.cc) -O2  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360942735/YIN.o ../yin/YIN.cpp
-
-${OBJECTDIR}/_ext/1360942735/main.o: ../yin/main.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/1360942735
-	${RM} $@.d
-	$(COMPILE.cc) -O2  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1360942735/main.o ../yin/main.cpp
 
 ${OBJECTDIR}/yin.o: yin.cpp 
 	${MKDIR} -p ${OBJECTDIR}

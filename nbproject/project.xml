@@ -11,7 +11,7 @@
             <make-dep-projects/>
             <sourceRootList>
                 <sourceRootElem>../utils</sourceRootElem>
-                <sourceRootElem>../yin</sourceRootElem>
+                <sourceRootElem>../YIN</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>
